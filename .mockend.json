@@ -1,17 +1,57 @@
 {
   "Company": {
-    "_": { "items": 10 },
-    "name": { "string": {} },
-    "email": { "string": {} },
-    "alternate_phone" : { "string": {} },
-    "operating_province" : { "string": {} },
-    "operating_days" : { "string": {} },
-    "registration_number" : { "string": {} },
-    "website" : { "string": {} },
-    "sector" : { "string": {} },
-    "active" : { "boolean": {} },
-    "on_hold" : { "boolean": {} },
-    "created_at" : {
+    "_": {
+      "items": 10
+    },
+    "name": {
+      "regexp": "[A-Z][a-z]{8,15}"
+    },
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "phone": {
+      "regexp": "+27[0-9]{9}"
+    },
+    "alternate_phone": {
+      "regexp": "+27[0-9]{9}"
+    },
+    "operating_province": {
+      "string": [
+        "Gauteng",
+        "Limpopo",
+        "North West"
+      ]
+    },
+    "operating_days": {
+      "string": [
+        "MON-FRI",
+        "WEEKEND",
+        "MON-SUN",
+        "WEEKDAYS"
+      ]
+    },
+    "registration_number": {
+      "string": {
+        "regexp": "[0-9]{10}"
+      }
+    },
+    "website": {
+      "regexp": "https:\\/\\/[a-z]{8,12}.co.za"
+    },
+    "sector": {
+      "string": [
+        "Entertainment",
+        "Catering",
+        "Decor"
+      ]
+    },
+    "active": {
+      "boolean": {}
+    },
+    "on_hold": {
+      "boolean": {}
+    },
+    "created_at": {
       "dateTime": {
         "min": "2022-01-01T00:00:00Z",
         "max": "2023-01-07T23:59:59Z"
