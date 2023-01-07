@@ -1,0 +1,25 @@
+{
+  "Company": {
+    "_": { "items": 10 },
+    "name": { "string": {} },
+    "email": { "string": {} },
+    "alternate_phone" : { "string": {} },
+    "operating_province" : { "string": {} },
+    "operating_days" : { "string": {} },
+    "registration_number" : { "string": {} },
+    "website" : { "string": {} },
+    "sector" : { "string": {} },
+    "active" : { "boolean": {} },
+    "on_hold" : { "boolean": {} },
+    "created_at" : {
+      "dateTime": {
+        "min": "2022-01-01T00:00:00Z",
+        "max": "2023-01-07T23:59:59Z"
+      }
+    }
+  },
+  "CompanyAddress": {
+    "body": { "string": {} },
+    "post": { "belongsTo": "Company" }
+  }
+}
