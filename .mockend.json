@@ -7,13 +7,13 @@
       "regexp": "[A-Z][a-z]{8,15}"
     },
     "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+      "regexp": "[a-z]{5,10}@mail\\.com"
     },
     "phone": {
-      "regexp": "+27[0-9]{9}"
+      "regexp": "[+]27[0-9]{9}"
     },
     "alternate_phone": {
-      "regexp": "+27[0-9]{9}"
+      "regexp": "[+]27[0-9]{9}"
     },
     "operating_province": {
       "string": [
@@ -34,7 +34,7 @@
       "regexp": "[0-9]{10}"
     },
     "website": {
-      "regexp": "https:\\/\\/[a-z]{8,12}.co.za"
+      "regexp": "https:\\/\\/[a-z]{8,12}[.]co[.]za"
     },
     "sector": {
       "string": [
