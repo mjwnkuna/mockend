@@ -17,9 +17,5 @@
         "max": "2023-01-07T23:59:59Z"
       }
     }
-  },
-  "CompanyAddress": {
-    "body": { "string": {} },
-    "post": { "belongsTo": "Company" }
   }
 }
