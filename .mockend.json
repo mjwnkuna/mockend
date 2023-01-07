@@ -31,9 +31,7 @@
       ]
     },
     "registration_number": {
-      "string": {
-        "regexp": "[0-9]{10}"
-      }
+      "regexp": "[0-9]{10}"
     },
     "website": {
       "regexp": "https:\\/\\/[a-z]{8,12}.co.za"
